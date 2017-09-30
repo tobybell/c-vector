@@ -10,6 +10,7 @@ To clone this repository, run
 
 To build the provided vector object and command line interface, run
 
+    $ cd c-vector
     $ make
 
 You can then interact with the C Vector data structure through the provided command line interface by running
