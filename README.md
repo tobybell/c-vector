@@ -92,6 +92,6 @@ A complete description of this data structure's runtime is given below.
 
 ## Notes
 
-As described in *Design* above, C Vector does not store data values internally, but rather by reference. Thus, operations on a C Vector accept and return `void *` pointers, and no client data is explicitly copied by the vector. This means that client code must take responsibility for storing values, either dyanimcally using `malloc` or in some other data structure.
+As described in *Design* above, C Vector does not store data values internally, but rather by reference. Thus, operations on a C Vector accept and return `void *` pointers, and no client data is explicitly copied by the vector. This means that client code must take responsibility for storing values, either "dyanimcally" (no pun intended) using `malloc` or in some other data structure.
 
 Clients are also solely responsible for managing the memory holding stored values. Even when a C Vector is destroyed (using `vector_destroy`), only its own memory will be freed, and not any memory referenced by the client pointers it stores. Therefore, clients should take care to explicitly free all value memory as appropriate before destroying a C Vector.
